@@ -1,24 +1,13 @@
-# todolist
+# vue 기초를 이용한 간단한 ToDoList 만들기
 
-## Project setup
-```
-npm install
-```
+## 작업하면서 어려웠던점
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+1.delete 기능을 적용하기 위하여 부모 컴포넌트의 데이터에 요청을 해야해서 custom event를 
+  사용하여 데이터에 접근을 해야 하는 부분에서 원하는 인덱스번호의 데이터를 제외하는 방식으로 
+  구현하는 부분에서 인덱스 번호를 받아오는데 어려움을 겪었는데 함수에 파라미터로 key의 값을 전달해주는
+  방식으로 해결하였습니다. 
 
-### Lints and fixes files
-```
-npm run lint
-```
+2.데이터의 저장의 위해 localStorage에 저장하였고 getItem을 이용하여 데이터를 다시 불러오던중 새로 등록되는 
+  항목이 보여지지 않아 확인 후 등록함수와 삭제함수에 다시 데이터를 불러오는 방식으로 해결하였습니다.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
